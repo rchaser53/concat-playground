@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "less": "lessc --source-map-map-inline less/abc.less dist/result.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/rchaser53/concat-playground#readme",
   "dependencies": {
-    "concat-with-sourcemaps": "^1.0.4"
+    "base-64": "^0.1.0",
+    "concat-with-sourcemaps": "^1.0.4",
+    "less": "^2.7.2",
+    "utf8": "^2.1.2"
   },
   "devDependencies": {
     "formstone": "^1.4.0"
