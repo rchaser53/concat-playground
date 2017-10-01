@@ -20,8 +20,7 @@
   "dependencies": {
     "base-64": "^0.1.0",
     "concat-with-sourcemaps": "^1.0.4",
-    "less": "^2.7.2",
-    "utf8": "^2.1.2"
+    "less": "^2.7.2"
   },
   "devDependencies": {
     "formstone": "^1.4.0"

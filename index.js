@@ -12,7 +12,8 @@ concat.add(`${srcRoot}carousel.css`, fs.readFileSync(`${srcRoot}carousel.css`));
 var concatenatedContent = concat.content;
 var sourceMapForContent = concat.sourceMap;
 
+const base64 = require('base-64');
+const encoded = base64.encode(sourceMapForContent);
 fs.writeFileSync(distFileName, `${concatenatedContent}
-/*# sourceMappingURL=formstone.min.css.map */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,${encoded} */
 `);
-fs.writeFileSync(`${distFileName}.map`, sourceMapForContent);
